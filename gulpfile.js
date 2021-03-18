@@ -14,7 +14,8 @@ function bs() {
     serveSass();
     browserSync.init({
         server: {
-            baseDir: "./"
+            baseDir: "./",
+            index: "home.html",
         }
     });
     watch("./*.html").on('change', browserSync.reload);

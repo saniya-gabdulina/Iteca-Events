@@ -1,0 +1,25 @@
+.hero {
+    background: url(../img/hero__bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 100vh;
+    margin-top: -100px;
+    font-family: 'Montserrat', sans-serif;
+    
+    .section {
+        &__title {
+            text-align: center;
+            color: $white;
+            font-weight: bold;
+            font-size: 52px;
+            margin-top: 280px;
+        }
+        &__subtitle {
+            text-align: center;
+            font-weight: bold;
+            font-size: 28px;
+            color: $white;
+            letter-spacing: 0.15em;
+            line-height: 140%;
+        }
+    }
+}

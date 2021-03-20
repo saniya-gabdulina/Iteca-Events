@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
     <title>Document</title>
 </head>
@@ -15,22 +17,22 @@
                 <img src="../img/main-logo.png" alt="">
                 <ul class="navbar">
                     <li class="navbar__item">
-                        <a href="#">HOME</a>
+                        <a href="home.html">HOME</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#">ABOUT US</a>
+                        <a href="about.html">ABOUT US</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="#">EVENTS</a>
+                        <a href="events.html">EVENTS</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="">OUR GLOBAL NETWORK</a>
+                        <a href="network.html">OUR GLOBAL NETWORK</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="">OUR PARTNERS</a>
+                        <a href="partners.html">OUR PARTNERS</a>
                     </li>
                     <li class="navbar__item">
-                        <a href="">CONTACTS</a>
+                        <a href="contacts.html">CONTACTS</a>
                     </li>
                 </ul>
             </div>
@@ -38,15 +40,14 @@
     </header>
     <section class="hero">
         <div class="container">
-            <h1 class="section__title">FIND THE PERFECT EVENT</h1>
-            <h2 class="section__subtitle">We have more than 50 events in 7 countries attracting <br> 100 000 visitors</div>
+            <h1 class="hero__title">FIND THE PERFECT EVENT</h1>
+            <h2 class="hero__subtitle">We have more than 50 events in 7 countries attracting <br> 100 000 visitors</div>
     </section>
     <section class="search">
         <div class="container">
             <div class="search-form form">
                 <div class="form-item">
-                    <input type="text" id="searching">
-                    <label for="searching" class="form-item__label">Event title, industry, country, city, month</label>
+                    <input type="text" id="searching" placeholder="Event title, industry, country, city, month">
                 </div>
                 <div class="form-item">
                     <p class="form-item__text">Search by industry</p>
@@ -72,64 +73,81 @@
             <div class="cards">
                 <div class="cards-item">
                     <div class="img">
-                        <img src="../img/card-img1.png" alt="">
+                        <img src="../img/card-img1.jpg" alt="">
                     </div>
-                    <h4 class="cards-item__title">OILGASCONFERENCE</h4>
-                    <p class="cards-item__text">26th International Caspian Oil & Gas Conference</p>
-                    <p class="cards-item__date">25 - 25 February 2021</p>
-                    <p class="cards-item__address"> Baku, Bilgah Beach Hotel</p>
-                    <a href="#">Go to website</a>
+                    <div class="wrapper">
+                        <h4 class="cards-item__title">OILGASCONFERENCE</h4>
+                        <p class="cards-item__text">26th International Caspian Oil & Gas Conference</p>
+                        <p class="cards-item__date">25 - 25 February 2021</p>
+                        <p class="cards-item__address"> Baku, Bilgah Beach Hotel</p>
+                        <a href="#">Go to website</a>
+                    </div>
+                    
                     
                 </div>
                 <div class="cards-item">
                     <div class="img">
-                        <img src="../img/card-img2.png" alt="">
+                        <img src="../img/card-img2.jpg" alt="">
                     </div>
-                    <h4 class="cards-item__title">BAKUTEL<h4>
-                    <p class="cards-item__text">25th Anniversary Azerbaijan International Telecommunications, Innovations and High Technologies Exhibition</p>
-                    <p class="cards-item__date">25 - 25 February 2021</p>
-                    <p class="cards-item__address">Baku, Baku Expo Center</p>
-                    <a href="#">Go to website</a>
+                    <div class="wrapper">
+                        <h4 class="cards-item__title">BAKUTEL</h4>
+                        <p class="cards-item__text">25th Anniversary Azerbaijan International Telecommunications, Innovations and High Technologies Exhibition</p>
+                        <p class="cards-item__date">25 - 25 February 2021</p>
+                        <p class="cards-item__address"> Baku, Baku Expo Center</p>
+                        <a href="#">Go to website</a>
+                    </div>
                 </div>
                 <div class="cards-item">
                     <div class="img">
-                        <img src="../img/card-img3.png" alt="">
+                        <img src="../img/card-img3.jpg" alt="">
                     </div>
-                    <h4 class="cards-item__title">FERQLIFERDLER</h4>
-                    <p class="cards-item__text">2nd Congress for Kids with Special Needs</p>
-                    <p class="cards-item__date">25 - 25 February 2021</p>
-                    <p class="cards-item__address">Baku, Heydar Aliyev Center</p>
-                    <a href="#">Go to website</a>
+                    <div class="wrapper">
+                        <h4 class="cards-item__title">FERQLIFERDLER</h4>
+                        <p class="cards-item__text">2nd Congress for Kids with Special Needs</p>
+                        <p class="cards-item__date">25 - 25 February 2021</p>
+                        <p class="cards-item__address">Baku, Heydar Aliyev Center</p>
+                        <a href="#">Go to website</a>
+
+                    </div>
                 </div>
                 <div class="cards-item">
                     <div class="img">
-                        <img src="../img/card-img4.png" alt="">
+                        <img src="../img/card-img4.jpg" alt="">
                     </div>
-                    <h4 class="cards-item__title">AITF</h4>
-                    <p class="cards-item__text">19th Azerbaijan International Travel and Tourism Fair</p>
-                    <p class="cards-item__date">8 - 10 April 2022</p>
-                    <p class="cards-item__address">Baku, Baku Expo Center</p>
-                    <a href="#">Go to website</a>
+                    <div class="wrapper">
+                        <h4 class="cards-item__title">AITF</h4>
+                        <p class="cards-item__text">19th Azerbaijan International Travel and Tourism Fair</p>
+                        <p class="cards-item__date">8 - 10 April 2022</p>
+                        <p class="cards-item__address">Baku, Baku Expo Center</p>
+                        <a href="#">Go to website</a>
+
+                    </div>
                 </div>
                 <div class="cards-item">
                     <div class="img">
-                        <img src="../img/card-img5.png" alt="">
+                        <img src="../img/card-img5.jpg" alt="">
                     </div>
-                    <h4 class="cards-item__title">ADEX</h4>
-                    <p class="cards-item__text">4th Azerbaijan International Defence Exhibition</p>
-                    <p class="cards-item__date">6 - 8 September 2022</p>
-                    <p class="cards-item__address">Baku, Baku Expo Center</p>
-                    <a href="#">Go to website</a>
+                    <div class="wrapper">
+                        <h4 class="cards-item__title">ADEX</h4>
+                        <p class="cards-item__text">4th Azerbaijan International Defence Exhibition</p>
+                        <p class="cards-item__date">6 - 8 September 2022</p>
+                        <p class="cards-item__address">Baku, Baku Expo Center</p>
+                        <a href="#">Go to website</a>
+
+                    </div>
                 </div>
                 <div class="cards-item">
                     <div class="img">
-                        <img src="../img/card-img6.png" alt="">
+                        <img src="../img/card-img6.jpg" alt="">
                     </div>
-                    <h4 class="cards-item__title">CIPS</h4>
-                    <p class="cards-item__text">13th International Exhibition for Internal Security, Safety and Rescue Equipment</p>
-                    <p class="cards-item__date">6 - 8 September 2022</p>
-                    <p class="cards-item__address">Baku, Heydar Aliyev Center</p>
-                    <a href="#">Go to website</a>
+                    <div class="wrapper">
+                        <h4 class="cards-item__title">CIPS</h4>
+                        <p class="cards-item__text">13th International Exhibition for Internal Security, Safety and Rescue Equipment</p>
+                        <p class="cards-item__date">6 - 8 September 2022</p>
+                        <p class="cards-item__address">Baku, Heydar Aliyev Center</p>
+                        <a href="#">Go to website</a>
+
+                    </div>
                 </div>
             </div>
         </div>

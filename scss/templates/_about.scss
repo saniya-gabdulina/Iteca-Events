@@ -1,0 +1,15 @@
+.about {
+    background: url(../img/about-bg.jpg) no-repeat;
+    background-size: cover;
+    min-height: 45vh;
+    margin-top: -110px;
+    &-content__text {
+        font-size: 20px;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 140%;
+        &:last-child {
+            margin-bottom: 100px;
+        }
+    }
+}

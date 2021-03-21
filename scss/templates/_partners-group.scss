@@ -1,0 +1,126 @@
+.partners-group {
+    .group {
+        &__title {
+            position: relative;
+            display: block;
+            margin-bottom: 90px;
+            padding: 25px 0;
+            font-weight: bold;
+            font-size: 36px;
+            color: $white;
+            z-index: 2;
+            &::before{
+                position: absolute;
+                content: '';
+                height: 90px;
+                width: 100%;
+                max-width: 650px;
+                background: linear-gradient(90deg, #0F7E86 14.1%, rgba(15, 126, 134, 0) 116.64%);
+                border-radius: 0 10px 10px 0;
+                backdrop-filter: blur(5px);
+                left: -153px;
+                top: 0;
+                z-index: -1;
+            }
+        }
+        &-item {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 80px;
+            &-img {
+                margin-left: -40px;
+                filter: drop-shadow(0px 4px 15px rgba(0, 0, 0, 0.4));
+                z-index: -1;
+                img {
+                    max-width: 605px;
+                    width: 100%;
+                    height: 503px;
+                    object-fit: cover;
+                    border-radius: 10px;
+                }
+               
+            }
+            
+            .item{
+                margin: 0 auto;
+                z-index: 2;
+                &-card {
+                    position: relative;
+                    display: flex;
+                    flex-direction: column;
+                    // justify-content: space-around;
+                    max-width: 586px;
+                    width: 100%;
+                    background: linear-gradient(178.7deg, rgba(34, 34, 34, 0.6) -28.71%, rgba(15, 126, 134, 0.36) 103.8%, rgba(255, 255, 255, 0.18) 103.8%);
+                    backdrop-filter: blur(10px);
+                    height: 619px;
+                    border-radius: 10px;
+                    &__title {
+                        position: relative;
+                        font-family: 'Gilroy', sans-serif;
+                        font-weight: 900;
+                        font-size: 28px;
+                        color: $white;
+                        display: flex;
+                        align-items: center;
+                        padding-left: 25px;
+                        margin-top: 40px;
+
+                        &::before {
+                            position: absolute;
+                            content: '';
+                            max-width: 416px;
+                            width: 100%;
+                            min-height: 100px;
+                            height: 100%;
+                            border-radius: 0 10px 10px 0;
+                            background: linear-gradient(89.37deg, rgba(255, 255, 255, 0.6) 0.54%, rgba(255, 255, 255, 0) 278.96%);
+                            border: 1px solid rgba(255, 255, 255, 0.3);
+                            box-sizing: border-box;
+                            backdrop-filter: blur(12px);
+                            z-index: -1;
+                            left: 0;
+                            top: 0;
+                        }
+
+                        img {
+                            margin-right: 15px;
+                            width: 100px;
+                            height: 60px;
+                        }
+                    }
+                    &__text {
+                        margin: 0 auto;
+                        margin-top: 30px;
+                        max-width: 480px;
+                        width: 100%;
+                        text-align: justify;
+                        padding: 0 25px;
+                        color: $white;
+                        letter-spacing: 0.1em;
+                    }
+                    a {
+                        position: absolute;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        bottom: 35px;
+                        right: 35px;
+                        max-width: 207px;
+                        width: 100%;
+                        height: 45px;
+                        background: rgba(255, 255, 255, 0.7);
+                        border: 1px solid #F9FFFF;
+                        box-sizing: border-box;
+                        border-radius: 10px;
+                        text-decoration: none;
+                        color: $maingreen;
+                        font-weight: 500;
+                        font-size: 18px;
+                    }
+                }
+            }
+        }
+    }
+}

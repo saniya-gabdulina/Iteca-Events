@@ -22,8 +22,14 @@
             font-size: 18px;
             letter-spacing: 0.15em;
             a {
+                position: relative;
+                display: block;
                 color: $black;
                 text-decoration: none;
+                cursor: pointer;
+                &:hover {
+                    text-decoration: underline;
+                }
             }
         }
     }

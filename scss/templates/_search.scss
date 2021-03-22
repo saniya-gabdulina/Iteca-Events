@@ -5,6 +5,7 @@
                 display: flex;
                 flex-direction: column;
                 justify-content: center;
+                align-items: center;
                 max-width: 850px;
                 margin: 0 auto;
                 input {
@@ -39,9 +40,6 @@
                     border-radius: 10px;
                     padding-left: 30px;
                     outline: none;
-                    // &::before {
-                    //     background: url(../img/select-icon.svg);
-                    // }
                 }
                 &__text {
                     font-size: 18px;
@@ -54,7 +52,7 @@
     .cards {
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-between;
+        justify-content: space-around;
         margin-top: 146px;
         &-item {
             margin-bottom: 100px;
@@ -82,18 +80,21 @@
                 color: $black;
                 min-height: 100px;
                 height: 100%;
+                font-size: 20px;
             }
             &__date {
                 font-weight: 600;
                 line-height: 120%;
                 letter-spacing: 0.1em;
                 color: $black;
+                font-size: 16px;
             }
             &__address {
                 letter-spacing: 0.08em;
                 font-weight: 300;
                 margin-bottom: 50px;
                 margin-top: 30px;
+                font-size: 16px;
             }
             a {
                 text-decoration: none;
@@ -122,3 +123,4 @@
         
     }
 }
+

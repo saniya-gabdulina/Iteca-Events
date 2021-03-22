@@ -1,16 +1,16 @@
 .hero {
-    display: block;
     background: url(../img/hero__bg.jpg) no-repeat;
     background-size: cover;
     min-height: 100vh;
     margin-top: -110px;
     font-family: 'Montserrat', sans-serif;
+    display: flex;
+    align-items: center;
     &__title {
         text-align: center;
         color: $white;
         font-weight: bold;
         font-size: 52px;
-        margin-top: 280px;
         letter-spacing: 0.15em;
     }
     &__subtitle {
@@ -21,7 +21,135 @@
         letter-spacing: 0.15em;
         line-height: 140%;
     }
-    
+    &-search {
+
+        .search {
+            &-form {
+                .form{
+                    &-item {
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 850px;
+                        margin: 0 auto;
+                        input {
+                            border: 1px $maingreen solid;
+                            border-radius: 10px;
+                            max-width: 850px;
+                            width: 100%;
+                            height: 70px;
+                        }
+                        ::placeholder {
+                            font-family: 'Gilroy', sans-serif;
+                            font-size: 24px;
+                            letter-spacing: 0.1em;
+                            color: $secondgreen;
+                            padding-left: 30px;
+                        }
+                        &:nth-child(2n) {
+                            justify-content: space-between;
+                            flex-direction: row;
+                            margin-top: 40px;
+                        }
+                        &:nth-child(3) {
+                            justify-content: space-between;
+                            flex-direction: row;
+                        }
+                        &__select {
+                            min-height: 40px;
+                            height: 100%;
+                            max-width: 589px;
+                            width: 100%;
+                            border: 1px $maingreen solid;
+                            border-radius: 10px;
+                            padding-left: 30px;
+                            outline: none;
+                        }
+                        &__text {
+                            font-size: 18px;
+                        }
+                       
+                    }
+        
+                }
+            }
+            .cards {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-around;
+                margin-top: 146px;
+                &-item {
+                    margin-bottom: 100px;
+                    width: 100%;
+                    max-width: 391px;
+                    height: 100%;
+                    max-height: 614px !important;
+                    filter: drop-shadow(0px 0px 30px rgba(60, 110, 114, 0.29));
+                    background: $white;
+                    font-family: 'Gilroy', sans-serif;
+                    border-radius: 10px;
+                    &__title {
+                        font-size: 24px;
+                        font-weight: bold;
+                        letter-spacing: 0.1em;
+                        font-family: 'Montserrat', sans-serif;
+                        color: $black;
+                        margin-top: 33px;
+                        margin-bottom: 8px;
+                    }
+                    &__text {
+                        line-height: 120%;
+                        font-weight: 300;
+                        font-size: 20px;
+                        color: $black;
+                        min-height: 100px;
+                        height: 100%;
+                        font-size: 20px;
+                    }
+                    &__date {
+                        font-weight: 600;
+                        line-height: 120%;
+                        letter-spacing: 0.1em;
+                        color: $black;
+                        font-size: 16px;
+                    }
+                    &__address {
+                        letter-spacing: 0.08em;
+                        font-weight: 300;
+                        margin-bottom: 50px;
+                        margin-top: 30px;
+                        font-size: 16px;
+                    }
+                    a {
+                        text-decoration: none;
+                        font-size: 18px;
+                        font-family: 'Montserrat', sanss-serif;
+                        color: $maingreen;
+                        font-weight: 500;
+                        letter-spacing: 0.1em;
+                        border-radius: 10px;
+                        border: 1px $maingreen solid;
+                        padding: 9px 19px;
+                        margin-top: 50px;
+                    }
+                    .wrapper {
+                        padding: 0 30px 30px;
+                        margin-bottom: 20px;
+                    }
+                    img {
+                        width: 100%;
+                        border-radius: 10px;
+                        min-height: 195px;
+                        height: 100%;
+                        object-fit: cover;
+                    }
+                }
+                
+            }
+        }
+        
+    }
     
     
 }

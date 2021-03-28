@@ -25,7 +25,6 @@
                     margin: 0 auto;
                     text-decoration: none;
                     color: $black;
-                    // max-width: 409px;
                     width: 100%;
                     z-index: 99;
                     font-size: 38px;
@@ -43,16 +42,17 @@
                         backdrop-filter: blur(5px);
                         // left: -35px;
                         z-index: -1;
+                        transition: 0.5s;
                     }
-                    
+                    &:hover::before {
+                        backdrop-filter: blur(15px);
+                        
+                    }
                 }
                 img {
                     position: absolute;
-                    // max-width: 584px;
                     width: 100%;
-                    // min-height: 433px;
                     height: 100%;
-                    // object-fit: cover;
                     border-radius: 10px;
                     z-index: 5;
                 }

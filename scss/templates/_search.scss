@@ -13,11 +13,11 @@
                     border-radius: 10px;
                     max-width: 850px;
                     width: 100%;
-                    height: 70px;
+                    height: 60px;
                 }
                 ::placeholder {
                     font-family: 'Gilroy', sans-serif;
-                    font-size: 24px;
+                    font-size: 22px;
                     letter-spacing: 0.1em;
                     color: $secondgreen;
                     padding-left: 30px;
@@ -25,7 +25,7 @@
                 &:nth-child(2n) {
                     justify-content: space-between;
                     flex-direction: row;
-                    margin-top: 40px;
+                    margin-top: 30px;
                 }
                 &:nth-child(3) {
                     justify-content: space-between;

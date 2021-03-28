@@ -1,15 +1,11 @@
 .footer {
     background: #06474B;
-    height: 134px;
-    position: relative;
-    display: block;
-    padding-top: 70px;
+    height: 120px;
     &__text {
-        display: flex;
-        justify-content: space-around;
-        bottom: 0;
-        padding-top: 40px;
+        padding-left: 0;
+        padding-top: 20px;
         li {
+            margin-bottom: 5px;
             font-size: 14px;
             list-style: none;
             font-weight: bold;

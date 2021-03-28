@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Magnific Popup core CSS file -->
+    <link rel="stylesheet" href="./css/magnific-popup.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="./css/style.css">
@@ -164,26 +166,40 @@
             </ul>
         </div>
     </footer>
-    <div class="modal" id="types-popup-modal">
+    <!-- Модальное окно -->
+    <div class="modal mfp-hide" id="feedback-modal">
         <div class="modal-form">
-            <a class="popup-modal-dismiss" href="#">
-                <img src="../img/close.svg" alt="">
-            </a>
+            <h3 class="modal-form__title">Contact Us</h3>
+            <!-- <a class="popup-modal-dismiss" href="#">
+                <img src="../img/close.svg" alt="close-img">/
+            </a> -->
             <div class="input-group">
-                <input type="text" name="Name" class="input-group-item form-input" placeholder="Contact person (full name)*">
+                <input type="text" name="name" class="input-group-item form-input" placeholder="Contact person (full name)*">
             </div>
             <div class="input-group">
-                <input type="text" name="Company" class="input-group-item form-input" placeholder="Company name*">
+                <input type="text" name="company" class="input-group-item form-input" placeholder="Company name*">
             </div>
             <div class="input-group">
-                <input type="text" name="Email" class="input-group-item form-input" placeholder="Email*">
+                <input type="text" name="email" class="input-group-item form-input" placeholder="Email*">
             </div>
             <div class="input-group">
-                <input type="text" name="Email" class="input-group-item form-input" placeholder="Contact phone number*">
+                <input type="text" name="phone" class="input-group-item form-input" placeholder="Contact phone number*">
             </div>
             <button class="modal-form-button">Send</button>
-            
         </div>
     </div>
+    <!-- Кнопка для вызова модального окна -->
+    <div class="custom">
+        <div class="wrapper">
+            <!-- <img src="../img/close-bookastand.svg" alt="close"> -->
+            <a href="#feedback-modal" class="custom-button">Book a stand</a>
+        </div>
+    </div>
+    <script src="./js/jquery-3.4.1.min.js"></script>
+    <script src="./js/jquery-migrate-1.2.1.min.js"></script>
+    <script src="./js/jquery.magnific-popup.js"></script>
+    <script src="./js/main.js"></script>
+
+
 </body>
 </html>

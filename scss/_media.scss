@@ -34,7 +34,7 @@
             }
 
             .form {
-                min-width: 550px;
+                max-width: 550px;
                 height: 490px;
                 padding-bottom: 0;
                 .input-group {
@@ -80,9 +80,7 @@
             height: 100%;
         }
     }
-    .footer {
-        height: 100px;
-    }
+    
     .header{
         &-nav {
             img {
@@ -121,7 +119,7 @@
     .contacts-content {
         .container {
             flex-wrap: wrap;
-            padding: 0 50px;
+            // padding: 0 50px;
             justify-content: center;
         }
         .col-50 {
@@ -260,19 +258,29 @@
             }
         }
     }
+    .modal {
+        width: 100%;
+        max-width: 550px;
+        padding: 50px 30px;
+    }
 }
 @media only screen and (max-width: 768px) {
+    
     section {
         padding: 50px 0;
     }
     .section__title {
-        margin-top: 20vh;
+        margin-top: 30vh;
         font-size: 26px;
+        &::before {
+            right: 10%;
+            width: 90vw;
+        }
     }
     .header {
         
         .navbar {
-            // display: none;
+            // display: none; 
         }
     }
     .hero {
@@ -329,25 +337,21 @@
         }
     }
     .about {
-        min-height: 30vh;
         &-content {
             &__text {
                 font-size: 14px;
             }
         }
     }
-    .events {
-        min-height: 30vh;
-    }
-    .network {
-        min-height: 30vh;
-    }
+    
     .partners {
-        min-height: 30vh;
         &-group {
             .group {
                 &__title {
                     font-size: 20px;
+                    &::before {
+                        right: 40vw;
+                    }
                 }
                 &-item {
                     .item {
@@ -359,6 +363,7 @@
                                 &::before {
                                     min-height: 60px;
                                     max-width: 320px;
+                                   
                                 }
                                 img {
                                     width: 70px;
@@ -380,14 +385,14 @@
         }
     }
     .contacts {
-        min-height: 30vh;
         &-content {
             .col-50 {
                 .text-group {
                     font-size: 14px;
                 }
                 .form {
-                    min-width: 400px;
+                    max-width: 450px;
+                    width: 100%;
                     .input-group {
                         padding: 25px 40px 0;
                         label {
@@ -406,21 +411,50 @@
     }
     .footer {
         &__text {
-            padding-top: 0;
-            flex-direction: column;
             li {
                 margin-bottom: 5px;
             }
         }
     }
+    .modal {
+        &-form {
+            .input-group {
+                &-item {
+                    height: 35px;
+                }
+                ::placeholder {
+                    font-size: 16px;
+                }
+            }
+            &-button {
+                height: 35px;
+            }
+        }
+    }
+    .custom {
+        max-width: 160px;
+        height: 64px;
+        .wrapper {
+
+            a {
+                font-size: 16px;
+            }
+            img {
+                width: 10px;
+            }
+        }
+    }
 }
 @media only screen and (max-width: 425px) {
+   
     .section__title {
         padding: 20px 0;
         font-size: 22px;
         &::before {
             min-height: 30px;
             height: 100%;
+            right: 10%;
+            width: 90vw;
         }
             
     }
@@ -448,6 +482,9 @@
                     &__select {
                         min-height: 35;
                         font-size: 14px;
+                        option {
+                            font-size: 14px;
+                        }
                     }
                 }
             }
@@ -507,7 +544,8 @@
             }
             &__title {
                 margin-bottom: 50px;
-                padding: 16px 0;
+                padding: 19px 0;
+                font-size: 18px;
                 &::before {
                     height: 60px;
                 }
@@ -516,14 +554,28 @@
 
     }
     .modal {
-        max-width: 320px;
         &-form {
             .input-group {
+                // padding: 22px 30px 0;
+                
                 ::placeholder {
                     font-size: 16px;
-                    padding-left: 15px;
+                    // padding-left: 6px;
                 }
+            }
+            a {
+                top: 10px;
+                right: 10px;
             }
         }
     }
+}
+@media only screen and (max-width: 375px) {
+    .section__title {
+        ::before {
+            right: 20vw;
+        }
+
+    }
+    
 }

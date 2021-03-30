@@ -1,6 +1,7 @@
 .header {
     position: relative;
     background: rgba(255, 255, 255, 0.81);
+    backdrop-filter: blur(5px);
         &-nav {
         display: flex;
         justify-content: space-between;

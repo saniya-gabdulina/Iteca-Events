@@ -1,27 +1,24 @@
 .hero {
-    background: url(../img/hero__bg.jpg) no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    margin-top: -110px;
-    font-family: 'Montserrat', sans-serif;
-    display: flex;
-    align-items: center;
-    &__title {
-        text-align: center;
-        color: $white;
-        font-weight: bold;
-        font-size: 48px;
-        letter-spacing: 0.15em;
-    }
-    &__subtitle {
-        text-align: center;
-        font-weight: bold;
-        font-size: 26px;
-        color: $white;
-        letter-spacing: 0.15em;
-        line-height: 140%;
-    }
-   
-    
-    
+	background: url(../img/hero__bg.jpg) no-repeat;
+	background-size: cover;
+	min-height: 100vh;
+	// margin-top: -110px;
+	font-family: "Montserrat", sans-serif;
+	display: flex;
+	align-items: center;
+	&__title {
+		text-align: center;
+		color: $white;
+		font-weight: bold;
+		font-size: 48px;
+		letter-spacing: 0.15em;
+	}
+	&__subtitle {
+		text-align: center;
+		font-weight: bold;
+		font-size: 26px;
+		color: $white;
+		letter-spacing: 0.15em;
+		line-height: 140%;
+	}
 }

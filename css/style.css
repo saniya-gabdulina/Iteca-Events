@@ -700,7 +700,9 @@ input {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         height: 619px;
-        border-radius: 10px; }
+        border-radius: 10px;
+        border: 1px solid;
+        border-image-source: linear-gradient(180deg, rgba(15, 126, 134, 0.6) 0%, rgba(15, 126, 134, 0) 100%); }
         .partners-group .group-item .item-card__title {
           position: relative;
           font-family: 'Gilroy', sans-serif;

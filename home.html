@@ -13,10 +13,11 @@
 <body>
     <header class="header">
         <div class="container">
-            <!-- <div class="header-logo">
-            </div> -->
+            <div class="header-logo">
+                <img src="../img/main-logo.png" alt="Logo">
+            </div>
+            <div class="nav-toggle">X</div>
             <nav class="header-nav">
-                <img src="../img/main-logo.png" alt="">
                 <ul class="navbar">
                     <li class="navbar__item">
                         <a href="home.html">HOME</a>
@@ -47,13 +48,13 @@
     </section>
     <section class="search search">
         <div class="container">
-            <div class="search-form form">
-                <div class="form-item">
+            <div class="search-form">
+                <div class="search-form__item">
                     <input type="text" id="searching" placeholder="Event title, industry, country, city, month">
                 </div>
-                <div class="form-item">
-                    <p class="form-item__text">Search by industry</p>
-                    <select class="form-item__select" name="industry" id="industry">
+                <div class="search-form__item">
+                    <p class="search-form__text">Search by industry</p>
+                    <select class="search-form__select" name="industry" id="industry">
                         <option value="1">Oil & Gas</option>
                         <option value="2">Beauty</option>
                         <option value="3">Building & constraction </option>
@@ -62,9 +63,9 @@
                         <option value="6">Defence & Security</option>
                     </select>
                 </div>
-                <div class="form-item">
-                    <p class="form-item__text">Search by location</p>
-                    <select class="form-item__select" name="location" id="location">
+                <div class="search-form__item">
+                    <p class="search-form__text">Search by location</p>
+                    <select class="search-form__select" name="location" id="location">
                         <option value="1">Azerbaijan</option>
                         <option value="2">Kazakhstan</option>
                         <option value="3">England</option>
@@ -156,14 +157,9 @@
     </section>
     <footer class="footer">
         <div class="container">
-            <ul class="footer__text">
-                <li>Commercial License No: 95244</li>
-                <li>Copyright © 2021 ICA Eurasia.</li>
-                <li>All right reserved.</li>
-                <li>
-                    <a href="http://www.ica-eurasia.com/privacy.html">Cookie and Privacy Policy.</a>
-                </li>
-            </ul>
+            <div class="footer__text">
+                <p>Copyright © 2021 ICA Eurasia. All right reserved. Commercial License No: 95244. <a href="http://www.ica-eurasia.com/privacy.html" target="_blank">Cookie and Privacy Policy.</a></p>
+            </div>
         </div>
     </footer>
     <!-- Модальное окно -->
@@ -174,18 +170,18 @@
                 <img src="../img/close.svg" alt="close-img">/
             </a> -->
             <div class="input-group">
-                <input type="text" name="name" class="input-group-item form-input" placeholder="Contact person (full name)*">
+                <input type="text" name="name" class="input-group-item search-form__input" placeholder="Contact person (full name)*">
             </div>
             <div class="input-group">
-                <input type="text" name="company" class="input-group-item form-input" placeholder="Company name*">
+                <input type="text" name="company" class="input-group-item search-form__input" placeholder="Company name*">
             </div>
             <div class="input-group">
-                <input type="text" name="email" class="input-group-item form-input" placeholder="Email*">
+                <input type="text" name="email" class="input-group-item search-form__input" placeholder="Email*">
             </div>
             <div class="input-group">
-                <input type="text" name="phone" class="input-group-item form-input" placeholder="Contact phone number*">
+                <input type="text" name="phone" class="input-group-item search-form__input" placeholder="Contact phone number*">
             </div>
-            <button class="modal-form-button">Send</button>
+            <button class="modal-search-form__button">Send</button>
         </div>
     </div>
     <!-- Кнопка для вызова модального окна -->

@@ -418,7 +418,7 @@ input {
   .header-logo {
     max-width: 105px; }
     .header-logo img {
-      width: 100%; }
+      height: 80px; }
   .header .navbar {
     display: flex;
     padding: 0;
@@ -724,9 +724,7 @@ input {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(10px);
         height: 619px;
-        border-radius: 10px;
-        border: 1px solid;
-        border-image-source: linear-gradient(180deg, rgba(15, 126, 134, 0.6) 0%, rgba(15, 126, 134, 0) 100%); }
+        border-radius: 10px; }
         .partners-group .group-item .item-card__title {
           position: relative;
           font-family: "Gilroy", sans-serif;
@@ -902,21 +900,53 @@ input {
       position: absolute;
       top: 14px;
       right: 14px; }
-    .modal-form-button {
-      outline: none;
-      max-width: 190px;
-      width: 100%;
-      height: 40px;
-      border: none;
-      background-color: #0f7e86;
-      border-radius: 10px;
-      color: #ffffff;
-      font-size: 18px; }
     .modal-form__title {
       font-size: 24px;
       color: #7bbfc4;
       font-weight: normal;
       margin-top: 0; }
+  .modal-search-form__button {
+    outline: none;
+    max-width: 190px;
+    width: 100%;
+    height: 40px;
+    border: none;
+    background-color: #0f7e86;
+    border-radius: 10px;
+    color: #ffffff;
+    font-size: 18px; }
+
+@media only screen and (max-width: 1920px) {
+  .section__title {
+    margin-top: 25vh; }
+  .header {
+    height: 80px; }
+    .header .container {
+      height: 80px; }
+    .header-nav .navbar__item {
+      font-size: 15px; }
+  .hero__title {
+    font-size: 46px; }
+  .hero__subtitle {
+    font-size: 24px; }
+  .about {
+    min-height: 30vh; }
+  .events {
+    min-height: 30vh; }
+    .events-cards .cards-item {
+      max-width: 554px;
+      height: 403px; }
+      .events-cards .cards-item__text {
+        font-size: 35px; }
+        .events-cards .cards-item__text::before {
+          max-width: 446px;
+          min-height: 277px; }
+  .network {
+    min-height: 30vh; }
+  .partners {
+    min-height: 30vh; }
+  .contacts {
+    min-height: 30vh; } }
 
 @media only screen and (max-width: 1280px) {
   .container {
@@ -1085,7 +1115,7 @@ input {
   section {
     padding: 50px 0; }
   .section__title {
-    margin-top: 30vh;
+    margin-top: 20vh;
     font-size: 26px; }
     .section__title::before {
       right: 10%;
